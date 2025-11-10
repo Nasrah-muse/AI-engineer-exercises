@@ -11,3 +11,4 @@ const input = readline.createInterface({
   output: process.stdout,
 })
 
+const askQuestion = (query) => new Promise((resolve) => input.question(query, resolve))
