@@ -14,13 +14,13 @@ async function main() {
 
   console.log("audio generating...");
 
-  const fear = await replicate.run(
+  const angry = await replicate.run(
     "minimax/speech-02-turbo",
     {
       input: {
-        text: "My hands shake, my thoughts race, and my courage feels distant.",
-        voice_id: "English_UpsetGirl",
-        emotion: "fearful",
+        text: "I stayed patient for too long, hoping things would change.",
+        voice_id: "English_MatureBoss",
+        emotion: "angry",
         speed: 1,
         pitch: 0,
         volume: 1,
@@ -31,7 +31,7 @@ async function main() {
     }
   );
 
-   const audioUrl = fear.url();
+   const audioUrl = angry.url();
   if (!audioUrl) {
     console.error("Audio URL not returned");
     return;
@@ -40,7 +40,7 @@ async function main() {
   const res = await fetch(audioUrl);
   const buffer = Buffer.from(await res.arrayBuffer());
 
-  fs.writeFileSync("audio/fear.mp3", buffer);
+  fs.writeFileSync("audio/angry.mp3", buffer);
  }
 
 main();
