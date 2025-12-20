@@ -24,3 +24,12 @@ function getTheme() {
     })
   })
 }
+
+async function main() {
+  const theme = await getTheme();
+  console.log("theme:", theme)
+
+  const ratios = { square: "1:1", landscape: "16:9", portrait: "9:16" }
+const styles = ["vivid", "natural"]
+
+}
