@@ -1,0 +1,10 @@
+{
+  "theme": "efel tower",
+  "ratio": "landscape",
+  "style": "vivid",
+  "model": "google/imagen-4-fast",
+  "prompt": "\n            High quality image.\n            Theme: efel tower.\n            Style: vivid.\n            Cinematic lighting, sharp focus, professional look\n      ",
+  "filename": "efel_tower_landscape_vivid.jpg",
+  "url": "https://replicate.delivery/xezq/gNebNcwsgIT2Z6vOOEetacxh7nu7iaKSFaeStPAxptIiTPqrA/tmp92t2ikpm.jpg",
+  "generated_at": "2025-12-20T16:01:56.016Z"
+}
