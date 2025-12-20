@@ -1,0 +1,10 @@
+{
+  "theme": "cyperbunk cityspace",
+  "ratio": "landscape",
+  "style": "vivid",
+  "model": "google/imagen-4-fast",
+  "prompt": "\n            High quality image.\n            Theme: cyperbunk cityspace.\n            Style: vivid.\n            Cinematic lighting, sharp focus, professional look\n      ",
+  "filename": "cyperbunk_cityspace_landscape_vivid.jpg",
+  "url": "https://replicate.delivery/xezq/jSzXGmSZLh7NIxLDoPa3NWZ2srfHv9UkzMHbQYA2a5bC8j6KA/tmpy9d3wlab.jpg",
+  "generated_at": "2025-12-20T16:17:11.420Z"
+}

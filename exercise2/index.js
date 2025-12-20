@@ -85,5 +85,36 @@ if (!fs.existsSync("metadata")) fs.mkdirSync("metadata")
       }
     }
   }
+    const galleryHtml = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery - ${theme}</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f0f0; padding: 20px; }
+    h1 { text-align: center; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .card { background: white; padding: 10px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 300px; }
+    .card img { width: 100%; border-radius: 10px; }
+    .card pre { font-size: 12px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <h1>Gallery - ${theme}</h1>
+  <div class="gallery">
+    ${images.map(img => `
+      <div class="card">
+        <img src="./images/${img.filename}" alt="${img.meta.theme}">
+        <pre>${JSON.stringify(img.meta, null, 2)}</pre>
+      </div>
+    `).join("\n")}
+  </div>
+</body>
+</html>
+`;
+
+  fs.writeFileSync("gallery.html", galleryHtml)
+  console.log("\n gallery created: gallery.html")
 }
 main();
