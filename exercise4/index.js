@@ -141,6 +141,24 @@ async function main() {
   console.log("Audio saved at:", audio || "Skipped due to rate limit");
 
   console.log("\n...DONE");
+
+  const contentSuite = {
+    topic,
+    text: {
+      article,
+      summary,
+      social,
+    },
+    visuals: {
+      headerImage,
+      thumbnail,
+    },
+    audio,
+    createdAt: new Date().toISOString(),
+  };
+
+  fs.writeFileSync("content-suite.json", JSON.stringify(contentSuite, null, 2));
+  console.log("\n Content suite saved as content-suite.json");
 }
 
 main();
