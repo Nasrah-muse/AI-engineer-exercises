@@ -6,4 +6,4 @@
 
 [Exercise 3](./exercise3/README.md)
 
-[Exercise 3](./exercise4/README.md)
+[Exercise 4](./exercise4/README.md)
